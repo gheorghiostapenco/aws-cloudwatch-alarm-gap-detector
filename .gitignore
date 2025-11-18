@@ -1,0 +1,63 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# -----------------------------
+# Virtual Environment
+# -----------------------------
+venv/
+env/
+.venv/
+
+# -----------------------------
+# Lambda build artifacts
+# -----------------------------
+lambda.zip
+*.zip
+
+# -----------------------------
+# Terraform
+# -----------------------------
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/crash.log
+
+# -----------------------------
+# Test artifacts
+# -----------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# -----------------------------
+# IDE / Editor Files
+# -----------------------------
+.idea/
+.vscode/
+*.code-workspace
+
+# -----------------------------
+# OS files
+# -----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# -----------------------------
+# Project-specific temporary files
+# -----------------------------
+lambda_app/*.tmp
+lambda_app/*.bak

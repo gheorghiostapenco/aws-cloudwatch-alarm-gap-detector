@@ -1,0 +1,15 @@
+required:
+  EC2:
+    - CPUUtilization
+    - StatusCheckFailed
+  RDS:
+    - FreeStorageSpace
+    - CPUUtilization
+  ALB:
+    - HTTPCode_ELB_5XX
+  Lambda:
+    - Errors
+    - Throttles
+filter:
+  tag_key: "Environment"
+  tag_value: "prod"
